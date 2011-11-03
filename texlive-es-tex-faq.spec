@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /help/es-tex-faq
+# catalog-date 2006-10-29 10:21:33 +0100
+# catalog-license lppl
+# catalog-version 1.97
 Name:		texlive-es-tex-faq
 Version:	1.97
 Release:	1
@@ -24,6 +30,7 @@ the FAQ from the Spanish TeX users group.
 %doc %{_texmfdistdir}/doc/generic/es-tex-faq/FAQ-CervanTeX.pdf
 %doc %{_texmfdistdir}/doc/generic/es-tex-faq/FAQ-CervanTeX.sgml
 %doc %{_texmfdistdir}/doc/generic/es-tex-faq/FAQ-CervanTeX.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -34,3 +41,5 @@ the FAQ from the Spanish TeX users group.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
