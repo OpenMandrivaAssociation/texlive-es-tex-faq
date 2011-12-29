@@ -16,8 +16,6 @@ Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/es-tex-faq.doc.ta
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 SGML source, converted LaTeX version, and readable copies of
@@ -30,7 +28,6 @@ the FAQ from the Spanish TeX users group.
 %doc %{_texmfdistdir}/doc/generic/es-tex-faq/FAQ-CervanTeX.pdf
 %doc %{_texmfdistdir}/doc/generic/es-tex-faq/FAQ-CervanTeX.sgml
 %doc %{_texmfdistdir}/doc/generic/es-tex-faq/FAQ-CervanTeX.tex
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -41,5 +38,3 @@ the FAQ from the Spanish TeX users group.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
