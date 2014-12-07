@@ -6,7 +6,7 @@
 # catalog-version 1.97
 Name:		texlive-es-tex-faq
 Version:	1.97
-Release:	8
+Release:	9
 Summary:	CervanTeX (Spanish TeX Group) FAQ
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/help/es-tex-faq
