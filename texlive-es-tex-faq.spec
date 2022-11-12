@@ -1,18 +1,12 @@
-# revision 15878
-# category Package
-# catalog-ctan /help/es-tex-faq
-# catalog-date 2006-10-29 10:21:33 +0100
-# catalog-license lppl
-# catalog-version 1.97
 Name:		texlive-es-tex-faq
-Version:	1.97
-Release:	11
+Version:	15878
+Release:	1
 Summary:	CervanTeX (Spanish TeX Group) FAQ
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/help/es-tex-faq
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/es-tex-faq.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/es-tex-faq.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/es-tex-faq.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/es-tex-faq.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -31,24 +25,10 @@ the FAQ from the Spanish TeX users group.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.97-2
-+ Revision: 751583
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.97-1
-+ Revision: 718372
-- texlive-es-tex-faq
-- texlive-es-tex-faq
-- texlive-es-tex-faq
-- texlive-es-tex-faq
-
