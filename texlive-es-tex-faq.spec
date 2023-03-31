@@ -1,6 +1,6 @@
 Name:		texlive-es-tex-faq
 Version:	15878
-Release:	1
+Release:	2
 Summary:	CervanTeX (Spanish TeX Group) FAQ
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/help/es-tex-faq
