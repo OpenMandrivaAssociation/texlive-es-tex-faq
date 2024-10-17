@@ -3,7 +3,7 @@ Version:	15878
 Release:	2
 Summary:	CervanTeX (Spanish TeX Group) FAQ
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/help/es-tex-faq
+URL:		https://www.ctan.org/tex-archive/help/es-tex-faq
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/es-tex-faq.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/es-tex-faq.doc.r%{version}.tar.xz
